@@ -11,11 +11,42 @@ CREATE TABLE products (
   -- Makes a string column called "name" which cannot contain null --
   Item_ID INT NOT NULL AUTO_INCREMENT,
   -- Makes a boolean column called "has_pet" which cannot contain null --
-  Product_Name VARCHAR(45) NOT NULL,
+  Product VARCHAR(45) NOT NULL,
   -- Makes a sting column called "pet_name" --
-  Department_Name VARCHAR(45) NOT NULL,
+  Department VARCHAR(45) NOT NULL,
   -- Makes an numeric column called "pet_age" --
   Price DECIMAL(10,2) NULL,
 
-  Stock_Quantity INT NULL
+  Quantity INT NULL
 );
+
+
+INSERT INTO products (Product, Department, Price, Quantity)
+VALUES ("NBA 2K 19", "Apps & Games", 35.00, 500);
+
+INSERT INTO products (Product, Department, Price, Quantity)
+VALUES ("RTX, Steel Rim", "Automotive", 90.00, 75);
+
+INSERT INTO products (Product, Department, Price, Quantity)
+VALUES ("Girl wash Your Face", "Books" 11.15, 100);
+
+INSERT INTO products (Product, Department, Price, Quantity)
+VALUES ("Dell Inspiron 7567", "Electronics" 770.00, 50);
+
+INSERT INTO products (Product, Department, Price, Quantity)
+VALUES ("vanilla", 2.50, 100);
+
+INSERT INTO products (Product, Department, Price, Quantity)
+VALUES ("vanilla", 2.50, 100);
+
+INSERT INTO products (Product, Department, Price, Quantity)
+VALUES ("vanilla", 2.50, 100);
+
+INSERT INTO products (Product, Department, Price, Quantity)
+VALUES ("vanilla", 2.50, 100);
+
+INSERT INTO products (Product, Department, Price, Quantity)
+VALUES ("vanilla", 2.50, 100);
+
+INSERT INTO products (Product, Department, Price, Quantity)
+VALUES ("vanilla", 2.50, 100);
