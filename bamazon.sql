@@ -1,26 +1,26 @@
--- Drops the animals_db if it exists currently --
+-- Drops the bamazon_db if it exists currently --
 DROP DATABASE IF EXISTS bamazon_db;
--- Creates the "animals_db" database --
+-- Creates the "bamazon_db" database --
 CREATE DATABASE bamazon_db;
 
--- Makes it so all of the following code will affect animals_db --
+-- Makes it so all of the following code will affect bamazon_db --
 USE bamazon_db;
 
--- Creates the table "people" within animals_db --
+-- Creates the table "products" within bamazon_db --
 CREATE TABLE products (
-  -- Makes a string column called "name" which cannot contain null --
+  -- Makes an ID column to number the products in the table that cannot contain null --
   Item_ID INT NOT NULL AUTO_INCREMENT,
-  -- Makes a boolean column called "has_pet" which cannot contain null --
+  -- Makes a string column called "product" which cannot contain null --
   Product VARCHAR(45) NOT NULL,
-  -- Makes a sting column called "pet_name" --
+  -- Makes a sting column called "department" to contain the department the product is in --
   Department VARCHAR(45) NOT NULL,
-  -- Makes an numeric column called "pet_age" --
+  -- Makes an numeric column called "price" that contains price of the product --
   Price DECIMAL(10,2) NULL,
 
   Quantity INT NULL
 );
 
-
+-- List of (10) products that will auto insert into the "products" table --
 INSERT INTO products (Product, Department, Price, Quantity)
 VALUES ("NBA 2K 19", "Video Games", 35.00, 500);
 
