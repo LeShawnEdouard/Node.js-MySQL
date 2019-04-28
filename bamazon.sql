@@ -22,7 +22,7 @@ CREATE TABLE products (
 
 
 INSERT INTO products (Product, Department, Price, Quantity)
-VALUES ("NBA 2K 19", "Apps & Games", 35.00, 500);
+VALUES ("NBA 2K 19", "Video Games", 35.00, 500);
 
 INSERT INTO products (Product, Department, Price, Quantity)
 VALUES ("RTX, Steel Rim", "Automotive", 90.00, 75);
@@ -34,19 +34,19 @@ INSERT INTO products (Product, Department, Price, Quantity)
 VALUES ("Dell Inspiron 7567", "Electronics" 770.00, 50);
 
 INSERT INTO products (Product, Department, Price, Quantity)
-VALUES ("vanilla", 2.50, 100);
+VALUES ("Fire TV Stick", "Electronics",49.99, 300);
 
 INSERT INTO products (Product, Department, Price, Quantity)
-VALUES ("vanilla", 2.50, 100);
+VALUES ("LEGO Harry Potter Hogwarts Castle", "Toys & Games", 399.99, 50);
 
 INSERT INTO products (Product, Department, Price, Quantity)
-VALUES ("vanilla", 2.50, 100);
+VALUES ("Titan Fall 2", "Video Games", 19.99, 100);
 
 INSERT INTO products (Product, Department, Price, Quantity)
-VALUES ("vanilla", 2.50, 100);
+VALUES ("The Low End Theory Album", "CDs & Vinyl", 24.41, 75);
 
 INSERT INTO products (Product, Department, Price, Quantity)
-VALUES ("vanilla", 2.50, 100);
+VALUES ("Bose QuietComfort Headphones", "Electronics", 349.00, 150);
 
 INSERT INTO products (Product, Department, Price, Quantity)
-VALUES ("vanilla", 2.50, 100);
+VALUES ("NASA T-shirt", "Clothing, Shoes, Jewelry", 9.99, 80);
