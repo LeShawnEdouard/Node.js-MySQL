@@ -14,10 +14,12 @@ CREATE TABLE products (
   Product VARCHAR(45) NOT NULL,
   -- Makes a sting column called "department" to contain the department the product is in --
   Department VARCHAR(45) NOT NULL,
-  -- Makes an numeric column called "price" that contains price of the product --
+  -- Makes a numeric column called "price" that contains price of the product --
   Price DECIMAL(10,2) NULL,
-
-  Quantity INT NULL
+  -- Makes a numeric column to contain the quantity of the product --
+  Quantity INT NULL,
+  -- Primary key used to auto increment a number for each product --
+  PRIMARY KEY (id)
 );
 
 -- List of (10) products that will auto insert into the "products" table --
@@ -28,10 +30,10 @@ INSERT INTO products (Product, Department, Price, Quantity)
 VALUES ("RTX, Steel Rim", "Automotive", 90.00, 75);
 
 INSERT INTO products (Product, Department, Price, Quantity)
-VALUES ("Girl wash Your Face", "Books" 11.15, 100);
+VALUES ("Girl wash Your Face", "Books", 11.15, 100);
 
 INSERT INTO products (Product, Department, Price, Quantity)
-VALUES ("Dell Inspiron 7567", "Electronics" 770.00, 50);
+VALUES ("Dell Inspiron 7567", "Electronics", 770.00, 50);
 
 INSERT INTO products (Product, Department, Price, Quantity)
 VALUES ("Fire TV Stick", "Electronics",49.99, 300);
