@@ -14,7 +14,6 @@ npm ERR! JSON.parse Failed to parse json
 npm ERR! JSON.parse Unexpected end of JSON input while parsing near ''
 npm ERR! JSON.parse Failed to parse package.json data.
 npm ERR! JSON.parse package.json must be actual JSON, not just JavaScript.
-
 npm ERR! A complete log of this run can be found in:
 npm ERR!     C:\Users\User 1\AppData\Roaming\npm-cache\_logs\2019-04-28T20_53_01_218Z-debug.log
 
