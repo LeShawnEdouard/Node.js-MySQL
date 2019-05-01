@@ -6,6 +6,8 @@ Problem 1: Currently, my products are not inserted into the products table. The 
 -I checked for any syntax errors but everything appeared fine
 -Moved on to finish rest of the homework for now
 
+Solution: In my table "products", I did not reference "Item_ID in the "PRIMARY KEY". After referncing the the Item_ID, my table and values were created in the database.
+
 ==================================================
 
 Problem 2: Incountered the following error when installing npm i (package.json):

@@ -19,7 +19,7 @@ CREATE TABLE products (
   -- Makes a numeric column to contain the quantity of the product --
   Quantity INT NULL,
   -- Primary key used to auto increment a number for each product --
-  PRIMARY KEY (id)
+  PRIMARY KEY (Item_ID)
 );
 
 -- List of (10) products that will auto insert into the "products" table --
