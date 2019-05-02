@@ -22,8 +22,11 @@ connection.connect(function(err) {
 
 function queryAllProducts() {
     connection.query("SELECT * FROM products", function(err,res) {
+        if (err) throw err;
         for (var i = 0; i < res.length; i++) {
-            console.log(res[i].item_id + " | " + res[i].product + " | " + res[i].department + " | " + res[i].price + " | " + res[i].quantity);
+            console.log(res[i].ID + " | " + res[i].Product + " | " + res[i].Department + " | " + res[i].Price + " | " + res[i].Quantity);
         }
+        console.log("----------------------------------");
+        console.log(res);
     })
 }
