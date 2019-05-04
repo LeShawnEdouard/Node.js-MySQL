@@ -20,6 +20,24 @@ connection.connect(function(err) {
     queryAllProducts();
 });
 
+
+function start() {
+    inquirer
+        .prompt({
+            name: "itemID",
+            type: "list",
+            message: "Please enter an ID from 1-10 of the product you would like to purchase",
+            choices: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        })
+        .then(function(choice) {
+            if (choice.itemID === res[i].ID) {
+                showProduct();
+            } else{
+              connection.end();
+            }
+        })
+}
+
 function queryAllProducts() {
     connection.query("SELECT * FROM products", function(err,res) {
         if (err) throw err;
@@ -30,3 +48,4 @@ function queryAllProducts() {
         console.log(res);
     })
 }
+
