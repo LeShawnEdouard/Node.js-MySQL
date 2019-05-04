@@ -1,4 +1,5 @@
 var mysql = require("mysql");
+var inquirer = require("inquirer");
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -35,6 +36,16 @@ function productID() {
       message: "How many would you like to purchase?"
     }
   ])
+  .then(function(answer) {
+      var ID = parseInt(answer.itemID);
+      connection.query("SELECT * FROM products WHERE ?", {ID:ID}, function(err,res) {
+          console.log(res, "res");
+          var quantity = res[0].Quantity
+          console.log(quantity);
+          
+      })
+      console.log(answer);
+  })
 }
 
 
@@ -46,6 +57,6 @@ function queryAllProducts() {
         console.log(res[i].ID + " | " + res[i].Product + " | " + res[i].Department + " | " + res[i].Price + " | " + res[i].Quantity);
     }
     console.log("----------------------------------");
-    console.log(res);
+    productID();
   })
 }
