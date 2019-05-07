@@ -39,10 +39,20 @@ function productID() {
   .then(function(answer) {
       var ID = parseInt(answer.itemID);
       connection.query("SELECT * FROM products WHERE ?", {ID:ID}, function(err,res) {
-          console.log(res, "res");
+          console.log(res);
           var quantity = res[0].Quantity
           console.log(quantity);
+          if (answer.quantity < res[0].Quantity) {
+            connection.query("UPDATE products SET Quantity = Quantity - ? WHERE ID=?", 
+            [answer.quantity, ID], 
+            function(err, res) {
+              console.log("You have purchase " + answer.quantity + " of this product " + ID);
+              queryAllProducts();
+            })
           
+          } else {
+          console.log("Currently, we do not have the amount you are requesting in stock!");
+        }
       })
       console.log(answer);
   })
