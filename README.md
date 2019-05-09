@@ -1,6 +1,10 @@
 # Node.js-MySQL
 
-Instructions: 
+Instructions:
+
+1. When you start the application you will select a product by its ID from 1-10.
+2. Next, you will enter the quantity of the product you selected.
+3. After selecting the the desired quantity the new quantity of the product will update in the database
 
 ![Products](https://user-images.githubusercontent.com/37108093/57421037-29d1ca00-71d8-11e9-9847-92956a8810a7.png)
 
