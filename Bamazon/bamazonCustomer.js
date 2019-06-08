@@ -42,16 +42,21 @@ function productID() {
           console.log(res);
           var quantity = res[0].Quantity
           console.log(quantity);
+          var totalCost = res[0].Price * answer.quantity;
           if (answer.quantity < res[0].Quantity) {
-            connection.query("UPDATE products SET Quantity = Quantity - ? WHERE ID=?", 
-            [answer.quantity, ID], 
-            function(err, res) {
-              console.log("You have purchase " + answer.quantity + " of this product " + ID);
-              queryAllProducts();
-            })
+            connection.query(
+              "UPDATE products SET Quantity = Quantity - ? WHERE ID=?", 
+              [answer.quantity, ID], 
+              function(err, res) {
+                console.log("You have purchase " + answer.quantity + " of this product " + ID);
+                console.log("The total cost of your purchase is "  + totalCost.toFixed(2));
+                queryAllProducts();
+              }
+            );
           
           } else {
           console.log("Currently, we do not have the amount you are requesting in stock!");
+          productID();
         }
       })
       console.log(answer);
