@@ -13,7 +13,7 @@ Instructions:
 
 ![not_enough_inventory](https://user-images.githubusercontent.com/37108093/59151049-bbf90800-89fa-11e9-9e23-a21d3b518354.png)
 
-
+![total_cost_of_order](https://user-images.githubusercontent.com/37108093/59151060-09757500-89fb-11e9-9ed6-a2793d9f965e.png)
 
 
 Problem 1: Currently, my products are not inserted into the products table. The db is created but I do not see my table nor my values.
