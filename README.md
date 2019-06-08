@@ -11,6 +11,8 @@ Instructions:
 
 ![Product_Selection_by_ID](https://user-images.githubusercontent.com/37108093/57421629-8930d980-71da-11e9-9ca1-fa9c994b1b3a.png)
 
+![not_enough_inventory](https://user-images.githubusercontent.com/37108093/59151049-bbf90800-89fa-11e9-9e23-a21d3b518354.png)
+
 
 
 
